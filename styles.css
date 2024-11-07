@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  .output {
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    margin: 10px 0;
+  }
+  .decreasing {
+    color: red;
+  }
+  .increasing {
+    color: green;
+  }
+  .edge {
+    color: blue;
+  }
+  
