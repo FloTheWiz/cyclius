@@ -24,12 +24,13 @@ function updateCyclius() {
   
   function updateOutput(id, value, slope) {
     const element = document.getElementById(id);
+    const percentage = (value * 100).toFixed(2) + "%";
     const status = slope < 0 ? "decreasing" : slope > 0 ? "increasing" : "extreme edge taste orz";
     const statusClass = slope < 0 ? "decreasing" : slope > 0 ? "increasing" : "edge";
   
     element.innerHTML = `
-      <p><strong>${id.charAt(0).toUpperCase() + id.slice(1)}</strong>: ${value.toFixed(5)}</p>
-      <p class="${statusClass}">${status}</p> 
+      <p><strong>${id.charAt(0).toUpperCase() + id.slice(1)}</strong>: ${percentage}</p>
+      <p class="${statusClass}">${status}</p>
     `;
   }
   
